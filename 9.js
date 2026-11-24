@@ -1,0 +1,10 @@
+
+fetch("https://jsonplaceholder.typicode.com/users/4")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.company.name);
+        console.log(data.website);
+    })
+    .catch(error => {
+        console.log("Error:", error);
+    });
